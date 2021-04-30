@@ -38,7 +38,7 @@ class UserJoinForm extends Model{
     {
         return
             [
-                'name'=>'Имя',
+                'name'=>'ФИО',
                 'email'=>'Email',
                 'password'=>'Пароль',
                 'password2'=>'Повторите пароль',
