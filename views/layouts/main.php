@@ -43,7 +43,16 @@ AppAsset::register($this);
         ];
     else
         $menu =[
-
+            [
+                'label' => 'Справочники',
+                'items' => [
+                    ['label'=>'Точки продаж','url'=>['/shop/index']],
+                    ['label'=>'Юридические лица','url'=>['/entity/index']],
+                    ['label'=>'Товары','url'=>['/product/index']],
+                   // ['label'=>'Маршруты','url'=>['/route/index']],
+                   // ['label'=>'Водители','url'=>['drivers/index']],
+                ],
+            ],
             ['label'=>'Выйти','url'=>['/user/logout']],
         ];
 
