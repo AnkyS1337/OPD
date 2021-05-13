@@ -29,7 +29,7 @@ class Products_for_entity extends ActiveRecord
             [
                 'id_entity'=>'Название маршрута',
                 'id_product'=>'Товар',
-                'price'=>'Цена'
+                'price'=>'Цена р.'
             ];
     }
     public static function getList_shop_for_entity($id)

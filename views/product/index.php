@@ -30,7 +30,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'emptyText' => 'Записи не найдены',
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
+            [
+                'attribute' => 'id',
 
+            ],
             'name',
 
             ['class' => 'yii\grid\ActionColumn',

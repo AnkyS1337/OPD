@@ -23,6 +23,7 @@ class Product extends ActiveRecord
         return
             [
                 'name'=>'Название товара',
+                'id' =>'Номенклатурный номер'
             ];
     }
 
