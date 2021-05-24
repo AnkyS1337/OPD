@@ -14,7 +14,8 @@ class Product extends ActiveRecord
     {
         return
             [
-                [['name'],'required','message'=>'Данное поле должно быть заполнено']
+                [['name', 'kod'],'required','message'=>'Данное поле должно быть заполнено']
+
             ];
     }
 
@@ -23,6 +24,7 @@ class Product extends ActiveRecord
         return
             [
                 'name'=>'Название товара',
+                'kod' => 'Код товара',
                 'id' =>'Номенклатурный номер'
             ];
     }

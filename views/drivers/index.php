@@ -5,18 +5,18 @@ use yii\grid\GridView;
 use yii\helpers\Url;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\ProductSearch */
+/* @var $searchModel app\models\DriversSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Товары';
+$this->title = 'Водители';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="product-index">
+<div class="drivers-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Добавить товар', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Добавить водителя', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(['id'=>'pjax-container']); ?>
@@ -30,15 +30,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'emptyText' => 'Записи не найдены',
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-            [
-                'attribute' => 'kod',
-
-            ],
             'name',
+            'phone',
 
             ['class' => 'yii\grid\ActionColumn',
 
-                'template' => '{delete}  ',
+                'template' => '{update}&nbsp&nbsp&nbsp{delete}  ',
                 'buttons' => [
                     'delete' => function ($url, $model, $key) {
                         $iconName = "glyphicon glyphicon-trash";
@@ -53,8 +50,8 @@ $this->params['breadcrumbs'][] = $this->title;
                         ];
                         //Для стилизации используем библиотеку иконок
                         $icon = Html::tag('span', '', ['class' => "glyphicon glyphicon-$iconName"]);
-                        $urlforjs = Url::to(['product/delete', 'id' => $model->id], true);
-                        $urlforcheck = Url::to(['product/candelete', 'id' => $model->id], true);
+                        $urlforjs = Url::to(['drivers/delete', 'id' => $model->id], true);
+                        $urlforcheck = Url::to(['drivers/candelete', 'id' => $model->id], true);
                         //Обработка клика на кнопку
                         $js = <<<JS
                     $("#{$id}").on("click",function(event)
@@ -85,7 +82,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     }
                                     else
                                     {
-                                            alert('Нельзя удалить т.к товар находится в одном из справочников');
+                                            alert('Нельзя удалить т.к есть маршруты на которые назначен данный водитель');
                                     }
                                 } 
                             }

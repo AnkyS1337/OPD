@@ -25,7 +25,7 @@ class Shop extends ActiveRecord
         return
         [
             'id_entity'=>'Юридическое лицо',
-            'name'=>'Комментарий(не обязательно)',
+            'name'=>'Название',
             'address'=>'Адрес',
             'payment_method'=>'Способ оплаты',
         ];
@@ -46,7 +46,7 @@ class Shop extends ActiveRecord
         $shops=ArrayHelper::map(self::find()->where(['deleted'=>0])->all(),'id','id_entity');
         foreach ($shops as $key=>$id_entity)
         {
-            $shops[$key]=(Entity::find()->where(['id'=>$id_entity])->one())->name." ". (Shop::find()->where(['id'=>$key])->one())->address;
+            $shops[$key]=(Entity::find()->where(['id'=>$id_entity])->one())->name." ". (Shop::find()->where(['id'=>$key])->one())->address." ".(Shop::find()->where(['id'=>$key])->one())->name;
         }
         return $shops;
     }

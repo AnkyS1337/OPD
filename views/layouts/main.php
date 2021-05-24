@@ -49,8 +49,8 @@ AppAsset::register($this);
                     ['label'=>'Точки продаж','url'=>['/shop/index']],
                     ['label'=>'Юридические лица','url'=>['/entity/index']],
                     ['label'=>'Товары','url'=>['/product/index']],
-                   // ['label'=>'Маршруты','url'=>['/route/index']],
-                   // ['label'=>'Водители','url'=>['drivers/index']],
+                    ['label'=>'Маршруты','url'=>['/route/index']],
+                    ['label'=>'Водители','url'=>['drivers/index']],
                 ],
             ],
             ['label'=>'Выйти','url'=>['/user/logout']],
@@ -74,7 +74,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; AKPK <?= '2021' ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
