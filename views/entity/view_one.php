@@ -6,7 +6,8 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Products_for_entity */
 
-$this->params['breadcrumbs'][] = ['label' => 'Products For Entities', 'url' => ['index']];
+$this->title = $model->product_name->name;
+$this->params['breadcrumbs'][] = ['label' => 'Юридические лица', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>

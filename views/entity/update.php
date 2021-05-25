@@ -6,6 +6,10 @@ use yii\helpers\Html;
 /* @var $model app\models\Route */
 
 $this->title = 'Изменение юридического лица: ' . $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Юридические лица', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div class="route-update">
 

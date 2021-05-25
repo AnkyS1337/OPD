@@ -5,7 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Shop */
 
-$this->title = 'Изменение данных о точке продаж:';
+$this->title = 'Изменение данных о точке продаж: ' . $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Точки продаж', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label'=> $model->name, 'url'=>['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = $this->title;
 
 ?>
 <div class="shop-update">

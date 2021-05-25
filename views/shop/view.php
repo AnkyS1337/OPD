@@ -6,6 +6,9 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Shop */
 
+$this->title = $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Точки продаж', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $model->name;
 
 \yii\web\YiiAsset::register($this);
 ?>

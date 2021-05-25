@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Order_of_Route */
 
 $this->title = 'Добавление точки маршрута';
-$this->params['breadcrumbs'][] = ['label' => 'Order Of Routes', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Маршруты', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="order-of--route-create">

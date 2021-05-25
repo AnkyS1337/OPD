@@ -5,8 +5,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Products_for_entity */
 
-$this->title = 'Добавление товара для юриридического лица';
-$this->params['breadcrumbs'][] = ['label' => 'Products For Entities', 'url' => ['index']];
+
+$this->title = 'Добавление товара для юридического лица';
+$this->params['breadcrumbs'][] = ['label' => 'Юридические лица', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="products-for-entity-create">

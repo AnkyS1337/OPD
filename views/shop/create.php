@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Shop */
 
 $this->title = 'Добавление точки продаж';
-$this->params['breadcrumbs'][] = ['label' => 'Shops', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Точки продаж', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="shop-create">

@@ -10,7 +10,8 @@ use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $model app\models\Route */
 
-$this->params['breadcrumbs'][] = ['label' => 'Routes', 'url' => ['index']];
+$this->title  = $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Юридические лица', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>

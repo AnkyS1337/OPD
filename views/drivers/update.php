@@ -6,9 +6,9 @@ use yii\helpers\Html;
 /* @var $model app\models\Drivers */
 
 $this->title = 'Изменение ФИО Водителя';
-$this->params['breadcrumbs'][] = ['label' => 'Drivers', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Водители', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = 'Изменение ФИО водителя';
 ?>
 <div class="drivers-update">
 
