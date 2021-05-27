@@ -29,7 +29,12 @@
         "symfony/browser-kit": ">=2.7 <=4.2.4",
         "codeception/module-filesystem": "^1.0.0",
         "codeception/module-yii2": "^1.0.0",
-        "codeception/module-asserts": "^1.0.0"
+        "codeception/module-asserts": "^1.0.0",
+        "kartik-v/yii2-mpdf": "^1.0",
+        "yii2tech/spreadsheet": "^1.0",
+        "kartik-v/yii2-widget-datepicker": "@dev",
+        "kartik-v/yii2-date-range": "dev-master",
+        "kartik-v/yii2-field-range": "*"
     },
     "config": {
         "process-timeout": 1800,

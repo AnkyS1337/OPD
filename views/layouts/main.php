@@ -43,6 +43,18 @@ AppAsset::register($this);
         ];
     else
         $menu =[
+            //['label'=>Yii::$app->user->getIdentity()->name],
+            ['label'=>'Печать погрузочных листов','url'=>['/waybill/view_routes']],
+            ['label'=>'Погрузочные листы','url'=>['/waybill/index']],
+//                   ['label'=>'Отчет','url'=>['/waybill/report']],
+//                   ['label'=>'Прайсы','url'=>['/directory/index']],
+//            [
+//                'label' => 'Отчеты',
+//                'items' => [
+//                    ['label'=>'Свод по маршрутам','url'=>['/waybill/report_full']],
+//                    ['label'=>'Юридические лица','url'=>['/report/contragents']],
+//                ],
+//            ],
             [
                 'label' => 'Справочники',
                 'items' => [
