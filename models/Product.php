@@ -14,8 +14,8 @@ class Product extends ActiveRecord
     {
         return
             [
-                [['name', 'kod'],'required','message'=>'Данное поле должно быть заполнено']
-
+                [['name', 'kod'],'required','message'=>'Данное поле должно быть заполнено'],
+                [['name', 'kod'],'unique','message'=>'Данное поле должно быть уникальным']
             ];
     }
 
