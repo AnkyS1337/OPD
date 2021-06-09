@@ -118,15 +118,15 @@
                     <td><?php if ($waybill_all_for_push['Сметана кг.'] !=null){echo $waybill_all_for_push['Сметана кг.']; }?></td>
                     <td><?php if ($waybill_all_for_push['Сметана кг._в'] !=null){echo $waybill_all_for_push['Сметана кг._в']; }?></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <? $orders=\app\models\Order_of_products::find()->all();?>
-                    <? foreach ($orders as $order):?>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <?endforeach;?>
-                </tr>
+<!--                <tr>-->
+<!--                    <td></td>-->
+<!--                    <td></td>-->
+<!--                    --><?// $orders=\app\models\Order_of_products::find()->all();?>
+<!--                    --><?// foreach ($orders as $order):?>
+<!--                    <td>&nbsp;</td>-->
+<!--                    <td>&nbsp;</td>-->
+<!--                    --><?//endforeach;?>
+<!--                </tr>-->
                 </tbody>
             </table>
 

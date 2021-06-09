@@ -238,7 +238,8 @@ $this->params['breadcrumbs'][] = ['label' => 'Погрузочные листы'
                     }
                 ],
                 ['class' => 'yii\grid\ActionColumn',
-                    'template' => '{count}{returns}&nbsp&nbsp{for_production}  ',
+                    'template' => ' ',
+                    //'template' => '{count}{returns}&nbsp&nbsp{for_production}  ',
 
                     'buttons' => [
                         'count'=>function($url,$model,$key)

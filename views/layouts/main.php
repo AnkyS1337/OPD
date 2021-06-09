@@ -22,6 +22,11 @@ AppAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <style>
+        .my-navbar{
+            background-color: skyblue;
+        }
+    </style>
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -32,7 +37,7 @@ AppAsset::register($this);
         'brandLabel' => 'AKPK',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-inverse navbar-fixed-top ',
         ],
     ]);
 
@@ -89,13 +94,13 @@ AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; AKPK <?= '2021' ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
+<!--<footer class="footer">-->
+<!--    <div class="container">-->
+<!--        <p class="pull-left">&copy; AKPK --><?//= '2021' ?><!--</p>-->
+<!---->
+<!--        <p class="pull-right">--><?//= Yii::powered() ?><!--</p>-->
+<!--    </div>-->
+<!--</footer>-->
 
 <?php $this->endBody() ?>
 </body>
