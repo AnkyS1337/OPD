@@ -3,7 +3,9 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 ?>
-<div class="row">
+<div class="row" style="
+margin-top: 8%;
+     ">
     <div class="col-lg-4"></div>
         <div class="panel panel-success col-lg-4" style="padding-right: 0; padding-left: 0">
             <div class="panel-heading">
